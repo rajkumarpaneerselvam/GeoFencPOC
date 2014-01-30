@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23428BB9189AF148007A081D /* MKPolygon+PointInPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 23428BB8189AF148007A081D /* MKPolygon+PointInPolygon.m */; };
+		238D35D9189AD95000664329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D35D8189AD95000664329 /* Foundation.framework */; };
+		238D35DB189AD95000664329 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D35DA189AD95000664329 /* CoreGraphics.framework */; };
+		238D35DD189AD95000664329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D35DC189AD95000664329 /* UIKit.framework */; };
+		238D35E3189AD95100664329 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238D35E1189AD95100664329 /* InfoPlist.strings */; };
+		238D35E5189AD95100664329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D35E4189AD95100664329 /* main.m */; };
+		238D35E9189AD95100664329 /* RKPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D35E8189AD95100664329 /* RKPAppDelegate.m */; };
+		238D35EC189AD95100664329 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238D35EA189AD95100664329 /* Main_iPhone.storyboard */; };
+		238D35EF189AD95100664329 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238D35ED189AD95100664329 /* Main_iPad.storyboard */; };
+		238D35F2189AD95100664329 /* RKPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D35F1189AD95100664329 /* RKPViewController.m */; };
+		238D35F4189AD95100664329 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238D35F3189AD95100664329 /* Images.xcassets */; };
+		238D35FB189AD95100664329 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D35FA189AD95100664329 /* XCTest.framework */; };
+		238D35FC189AD95100664329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D35D8189AD95000664329 /* Foundation.framework */; };
+		238D35FD189AD95100664329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238D35DC189AD95000664329 /* UIKit.framework */; };
+		238D3605189AD95100664329 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 238D3603189AD95100664329 /* InfoPlist.strings */; };
+		238D3607189AD95100664329 /* GeoFencePOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D3606189AD95100664329 /* GeoFencePOCTests.m */; };
+		238D3617189ADD0100664329 /* DDAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D3614189ADD0100664329 /* DDAnnotation.m */; };
+		238D3618189ADD0100664329 /* DDAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D3616189ADD0100664329 /* DDAnnotationView.m */; };
+		238D361B189ADE2200664329 /* RKPAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 238D361A189ADE2200664329 /* RKPAreaModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		238D35FE189AD95100664329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 238D35CD189AD95000664329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 238D35D4189AD95000664329;
+			remoteInfo = GeoFencePOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23428BB7189AF148007A081D /* MKPolygon+PointInPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKPolygon+PointInPolygon.h"; sourceTree = "<group>"; };
+		23428BB8189AF148007A081D /* MKPolygon+PointInPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKPolygon+PointInPolygon.m"; sourceTree = "<group>"; };
+		238D35D5189AD95000664329 /* GeoFencePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoFencePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		238D35D8189AD95000664329 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		238D35DA189AD95000664329 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		238D35DC189AD95000664329 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		238D35E0189AD95100664329 /* GeoFencePOC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoFencePOC-Info.plist"; sourceTree = "<group>"; };
+		238D35E2189AD95100664329 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		238D35E4189AD95100664329 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		238D35E6189AD95100664329 /* GeoFencePOC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoFencePOC-Prefix.pch"; sourceTree = "<group>"; };
+		238D35E7189AD95100664329 /* RKPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKPAppDelegate.h; sourceTree = "<group>"; };
+		238D35E8189AD95100664329 /* RKPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKPAppDelegate.m; sourceTree = "<group>"; };
+		238D35EB189AD95100664329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		238D35EE189AD95100664329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		238D35F0189AD95100664329 /* RKPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKPViewController.h; sourceTree = "<group>"; };
+		238D35F1189AD95100664329 /* RKPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKPViewController.m; sourceTree = "<group>"; };
+		238D35F3189AD95100664329 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		238D35F9189AD95100664329 /* GeoFencePOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoFencePOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		238D35FA189AD95100664329 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		238D3602189AD95100664329 /* GeoFencePOCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoFencePOCTests-Info.plist"; sourceTree = "<group>"; };
+		238D3604189AD95100664329 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		238D3606189AD95100664329 /* GeoFencePOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoFencePOCTests.m; sourceTree = "<group>"; };
+		238D3613189ADD0100664329 /* DDAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAnnotation.h; sourceTree = "<group>"; };
+		238D3614189ADD0100664329 /* DDAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotation.m; sourceTree = "<group>"; };
+		238D3615189ADD0100664329 /* DDAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAnnotationView.h; sourceTree = "<group>"; };
+		238D3616189ADD0100664329 /* DDAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAnnotationView.m; sourceTree = "<group>"; };
+		238D3619189ADE2200664329 /* RKPAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPAreaModel.h; path = Model/RKPAreaModel.h; sourceTree = "<group>"; };
+		238D361A189ADE2200664329 /* RKPAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKPAreaModel.m; path = Model/RKPAreaModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		238D35D2189AD95000664329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238D35DB189AD95000664329 /* CoreGraphics.framework in Frameworks */,
+				238D35DD189AD95000664329 /* UIKit.framework in Frameworks */,
+				238D35D9189AD95000664329 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238D35F6189AD95100664329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238D35FB189AD95100664329 /* XCTest.framework in Frameworks */,
+				238D35FD189AD95100664329 /* UIKit.framework in Frameworks */,
+				238D35FC189AD95100664329 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		238D35CC189AD95000664329 = {
+			isa = PBXGroup;
+			children = (
+				238D35DE189AD95100664329 /* GeoFencePOC */,
+				238D3600189AD95100664329 /* GeoFencePOCTests */,
+				238D35D7189AD95000664329 /* Frameworks */,
+				238D35D6189AD95000664329 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		238D35D6189AD95000664329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				238D35D5189AD95000664329 /* GeoFencePOC.app */,
+				238D35F9189AD95100664329 /* GeoFencePOCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		238D35D7189AD95000664329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238D35D8189AD95000664329 /* Foundation.framework */,
+				238D35DA189AD95000664329 /* CoreGraphics.framework */,
+				238D35DC189AD95000664329 /* UIKit.framework */,
+				238D35FA189AD95100664329 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		238D35DE189AD95100664329 /* GeoFencePOC */ = {
+			isa = PBXGroup;
+			children = (
+				238D3610189ADD0100664329 /* Classes */,
+				238D35E7189AD95100664329 /* RKPAppDelegate.h */,
+				238D35E8189AD95100664329 /* RKPAppDelegate.m */,
+				238D35EA189AD95100664329 /* Main_iPhone.storyboard */,
+				238D35ED189AD95100664329 /* Main_iPad.storyboard */,
+				238D35F0189AD95100664329 /* RKPViewController.h */,
+				238D35F1189AD95100664329 /* RKPViewController.m */,
+				238D35F3189AD95100664329 /* Images.xcassets */,
+				238D35DF189AD95100664329 /* Supporting Files */,
+			);
+			path = GeoFencePOC;
+			sourceTree = "<group>";
+		};
+		238D35DF189AD95100664329 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238D35E0189AD95100664329 /* GeoFencePOC-Info.plist */,
+				238D35E1189AD95100664329 /* InfoPlist.strings */,
+				238D35E4189AD95100664329 /* main.m */,
+				238D35E6189AD95100664329 /* GeoFencePOC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		238D3600189AD95100664329 /* GeoFencePOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				238D3606189AD95100664329 /* GeoFencePOCTests.m */,
+				238D3601189AD95100664329 /* Supporting Files */,
+			);
+			path = GeoFencePOCTests;
+			sourceTree = "<group>";
+		};
+		238D3601189AD95100664329 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				238D3602189AD95100664329 /* GeoFencePOCTests-Info.plist */,
+				238D3603189AD95100664329 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		238D3610189ADD0100664329 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				238D3611189ADD0100664329 /* External */,
+				238D3619189ADE2200664329 /* RKPAreaModel.h */,
+				238D361A189ADE2200664329 /* RKPAreaModel.m */,
+				23428BB7189AF148007A081D /* MKPolygon+PointInPolygon.h */,
+				23428BB8189AF148007A081D /* MKPolygon+PointInPolygon.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		238D3611189ADD0100664329 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				238D3612189ADD0100664329 /* MapKitDragAndDrop */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		238D3612189ADD0100664329 /* MapKitDragAndDrop */ = {
+			isa = PBXGroup;
+			children = (
+				238D3613189ADD0100664329 /* DDAnnotation.h */,
+				238D3614189ADD0100664329 /* DDAnnotation.m */,
+				238D3615189ADD0100664329 /* DDAnnotationView.h */,
+				238D3616189ADD0100664329 /* DDAnnotationView.m */,
+			);
+			path = MapKitDragAndDrop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		238D35D4189AD95000664329 /* GeoFencePOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238D360A189AD95100664329 /* Build configuration list for PBXNativeTarget "GeoFencePOC" */;
+			buildPhases = (
+				238D35D1189AD95000664329 /* Sources */,
+				238D35D2189AD95000664329 /* Frameworks */,
+				238D35D3189AD95000664329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoFencePOC;
+			productName = GeoFencePOC;
+			productReference = 238D35D5189AD95000664329 /* GeoFencePOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		238D35F8189AD95100664329 /* GeoFencePOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238D360D189AD95100664329 /* Build configuration list for PBXNativeTarget "GeoFencePOCTests" */;
+			buildPhases = (
+				238D35F5189AD95100664329 /* Sources */,
+				238D35F6189AD95100664329 /* Frameworks */,
+				238D35F7189AD95100664329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				238D35FF189AD95100664329 /* PBXTargetDependency */,
+			);
+			name = GeoFencePOCTests;
+			productName = GeoFencePOCTests;
+			productReference = 238D35F9189AD95100664329 /* GeoFencePOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		238D35CD189AD95000664329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RKP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Panneerselvam, Rajkumar";
+				TargetAttributes = {
+					238D35F8189AD95100664329 = {
+						TestTargetID = 238D35D4189AD95000664329;
+					};
+				};
+			};
+			buildConfigurationList = 238D35D0189AD95000664329 /* Build configuration list for PBXProject "GeoFencePOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 238D35CC189AD95000664329;
+			productRefGroup = 238D35D6189AD95000664329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				238D35D4189AD95000664329 /* GeoFencePOC */,
+				238D35F8189AD95100664329 /* GeoFencePOCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		238D35D3189AD95000664329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238D35EF189AD95100664329 /* Main_iPad.storyboard in Resources */,
+				238D35F4189AD95100664329 /* Images.xcassets in Resources */,
+				238D35EC189AD95100664329 /* Main_iPhone.storyboard in Resources */,
+				238D35E3189AD95100664329 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238D35F7189AD95100664329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238D3605189AD95100664329 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		238D35D1189AD95000664329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238D361B189ADE2200664329 /* RKPAreaModel.m in Sources */,
+				238D3617189ADD0100664329 /* DDAnnotation.m in Sources */,
+				238D3618189ADD0100664329 /* DDAnnotationView.m in Sources */,
+				238D35E9189AD95100664329 /* RKPAppDelegate.m in Sources */,
+				238D35F2189AD95100664329 /* RKPViewController.m in Sources */,
+				238D35E5189AD95100664329 /* main.m in Sources */,
+				23428BB9189AF148007A081D /* MKPolygon+PointInPolygon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238D35F5189AD95100664329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238D3607189AD95100664329 /* GeoFencePOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		238D35FF189AD95100664329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 238D35D4189AD95000664329 /* GeoFencePOC */;
+			targetProxy = 238D35FE189AD95100664329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		238D35E1189AD95100664329 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238D35E2189AD95100664329 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		238D35EA189AD95100664329 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238D35EB189AD95100664329 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		238D35ED189AD95100664329 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238D35EE189AD95100664329 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		238D3603189AD95100664329 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				238D3604189AD95100664329 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		238D3608189AD95100664329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		238D3609189AD95100664329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		238D360B189AD95100664329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoFencePOC/GeoFencePOC-Prefix.pch";
+				INFOPLIST_FILE = "GeoFencePOC/GeoFencePOC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		238D360C189AD95100664329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoFencePOC/GeoFencePOC-Prefix.pch";
+				INFOPLIST_FILE = "GeoFencePOC/GeoFencePOC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		238D360E189AD95100664329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoFencePOC.app/GeoFencePOC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoFencePOC/GeoFencePOC-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeoFencePOCTests/GeoFencePOCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		238D360F189AD95100664329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoFencePOC.app/GeoFencePOC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoFencePOC/GeoFencePOC-Prefix.pch";
+				INFOPLIST_FILE = "GeoFencePOCTests/GeoFencePOCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		238D35D0189AD95000664329 /* Build configuration list for PBXProject "GeoFencePOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238D3608189AD95100664329 /* Debug */,
+				238D3609189AD95100664329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238D360A189AD95100664329 /* Build configuration list for PBXNativeTarget "GeoFencePOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238D360B189AD95100664329 /* Debug */,
+				238D360C189AD95100664329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238D360D189AD95100664329 /* Build configuration list for PBXNativeTarget "GeoFencePOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238D360E189AD95100664329 /* Debug */,
+				238D360F189AD95100664329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 238D35CD189AD95000664329 /* Project object */;
+}
